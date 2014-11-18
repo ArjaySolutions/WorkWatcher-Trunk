@@ -1,0 +1,29 @@
+﻿<Window x:Name="WorkWatcher" x:Class="WorkWatcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Style="{DynamicResource MainWindowStyle}"
+        Title="WorkWatcher" Height="350" Width="450" SnapsToDevicePixels="True"  ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="Icon.ico" WindowStyle="None" Background="#FFE8E8E8" AllowsTransparency="True" Foreground="{x:Null}">
+
+    <Grid x:Name="Login" >
+        <Label x:Name="TitleNameLbl" Content="WorkWatcher" HorizontalAlignment="Center" Margin="27,-36,278,0" VerticalAlignment="Top" Width="133" FontFamily="Viner Hand ITC" FontSize="18"/>
+        <Image x:Name="IconImage" HorizontalAlignment="Left" Height="25" Margin="1,-31,0,0" VerticalAlignment="Top" Width="26" Source="Icon.ico"/>
+        <Label x:Name="UsernameLbl" Content="UserName :" HorizontalAlignment="Left" Margin="25,19,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Perpetua Titling MT"/>
+        <Label x:Name="UserNameValueLbl" Content="" HorizontalAlignment="Left" Margin="110,15,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Segoe Print"/>
+        <Label x:Name="LogResultLbl" Content="" HorizontalAlignment="Left" Margin="345,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.308" FontFamily="Segoe Print"/>
+        <Button x:Name="LogOutBtn" Content="Log Out" HorizontalAlignment="Left" Margin="345,17,0,0" VerticalAlignment="Top" Width="75" Click="LogOutBtn_Click"/>
+        <Label x:Name="LoginTimeNameLbl" Content="Login Time :" HorizontalAlignment="Left" Margin="15,54,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Perpetua Titling MT"/>
+        <Label x:Name="LoginTimeLbl" Content="00:00:00" HorizontalAlignment="Left" Margin="110,54,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Perpetua Titling MT"/>
+        <Label Content="Projects :" HorizontalAlignment="Left" Margin="30,85,0,0" VerticalAlignment="Top" Width="85" FontSize="14" FontFamily="Perpetua Titling MT"/>
+        <ComboBox  x:Name="ComboBoxTest" HorizontalAlignment="Left" Margin="115,87,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label x:Name="ProjectResultLbl" Content="" HorizontalAlignment="Left" Margin="345,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-0.308" FontFamily="Perpetua Titling MT"/>
+        <Label x:Name="ProjectTimeNameLbl" Content="Project Time :" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Perpetua Titling MT"/>
+        <Label x:Name="ProjectTimeLbl" Content="00:00:00" HorizontalAlignment="Left" Margin="110,115,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Perpetua Titling MT"/>
+        <Button x:Name="LogBtn" Content="Login" HorizontalAlignment="Left" Margin="120,215,0,0" VerticalAlignment="Top" Width="184" Height="58" FontFamily="Perpetua Titling MT" FontSize="20" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5">
+        </Button>
+        <Label x:Name="LogResultBottomLbl" Content="" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top"/>
+        <Label Content="Task :" HorizontalAlignment="Left" Margin="63,143,0,0" VerticalAlignment="Top" Width="55" FontSize="14" FontFamily="Perpetua Titling MT"/>
+        <TextBox x:Name="TaskTextBox" HorizontalAlignment="Left" Height="62" Margin="119,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" AcceptsReturn="True" AcceptsTab="True"/>
+
+    </Grid>
+</Window>
+
